@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>All cycles</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/style1.css">
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-primary bg-dark">
+        <a class="navbar-brand" href="/">RentARide</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link active" href="/about">About Us</a>
+                </li>
+                <li class="nav-item">
+
+                    <!-- <a class="nav-link" href="/contact.html">Contact Us</a> -->
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link" href="#">Join Now</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<!--                        <a class="dropdown-item" href="/signin">Sign In</a>-->
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/">Log Out</a>
+                    </div>
+                </li>
+
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(static/Cycle2.png)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="" alt="">
+            </div>
+
+            <div class="subtitle">"Good condition"</div>
+          </div>
+        </div>
+        <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(static/Cycle1.png)"></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="" alt="">
+              </div>
+
+              <div class="subtitle">"Excellent conditon"</div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(static/cycle3.png)"></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="" alt="">
+              </div>
+
+              <div class="subtitle">"Good condition"</div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(static/cycle2.png)"></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="" alt="">
+              </div>
+
+              <div class="subtitle">"Great condition"</div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(static/cycles4.png)"></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="" alt="">
+              </div>
+
+              <div class="subtitle">"Broken"</div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(static/cycles5.png)"></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="" alt="">
+              </div>
+
+              <div class="subtitle">"Cycle is yes"</div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(static/cycle3.png)"></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="" alt="">
+              </div>
+
+              <div class="subtitle">""</div>
+            </div>
+          </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>

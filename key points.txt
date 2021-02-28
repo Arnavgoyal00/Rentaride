@@ -1,0 +1,11 @@
+
+we are acting as an mediatator,seller and user
+user rating, for to prevent conflicts
+one month free trial(subscription)
+expandable
+essential for hosteler
+Eco freindly
+
+Backened- flask taking values
+local host and storing data on local host (XAMPP)
+database
